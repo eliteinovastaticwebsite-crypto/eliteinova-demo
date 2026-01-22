@@ -31,15 +31,12 @@ const IndividualPage = () => {
   return (
     <div className="w-full min-h-screen relative">
       {/* Red and Gold Themed Background */}
-      <div 
-        className="fixed inset-0 z-0"
-        style={{
-          backgroundImage: `url(${backgroundImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed',
-        }}
-      >
+      <div className="fixed inset-0 z-0 overflow-hidden">
+  <img 
+    src={backgroundImage} 
+    alt="Background"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
         {/* Red and Gold gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-red-900/30 via-yellow-900/20 to-red-900/40 animate-gradient-flow"></div>
         
