@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ChevronDown, Search, Home, MapPin, Star, Filter, X, Building, Landmark, Warehouse, Building2 } from "lucide-react";
-import backgroundImage from "../assets/ind1.jpg"
+import backgroundImage from "../assets/matrimony banner1.png";
 
 const IndividualPage = () => {
   const [activeButton, setActiveButton] = useState("Rent");
@@ -30,7 +30,7 @@ const IndividualPage = () => {
 
   return (
     <div className="w-full min-h-screen relative">
-      {/* Enhanced Background with Particle Effects */}
+      {/* Red and Gold Themed Background */}
       <div 
         className="fixed inset-0 z-0"
         style={{
@@ -40,10 +40,10 @@ const IndividualPage = () => {
           backgroundAttachment: 'fixed',
         }}
       >
-        {/* Enhanced gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-teal-900/30 via-emerald-900/20 to-teal-900/40 animate-gradient-flow"></div>
+        {/* Red and Gold gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-red-900/30 via-yellow-900/20 to-red-900/40 animate-gradient-flow"></div>
         
-        {/* Enhanced floating particles */}
+        {/* Floating particles in red and gold */}
         <div className="absolute inset-0 overflow-hidden">
           {[...Array(25)].map((_, i) => (
             <div
@@ -56,7 +56,7 @@ const IndividualPage = () => {
                 animationDuration: `${8 + Math.random() * 8}s`,
                 width: `${2 + Math.random() * 4}px`,
                 height: `${2 + Math.random() * 4}px`,
-                background: `radial-gradient(circle, rgba(38, 166, 154, 0.4) 0%, rgba(0, 105, 92, 0.2) 70%, transparent 100%)`,
+                background: `radial-gradient(circle, rgba(220, 38, 38, 0.4) 0%, rgba(245, 158, 11, 0.2) 70%, transparent 100%)`,
                 borderRadius: '50%',
               }}
             ></div>
@@ -72,9 +72,9 @@ const IndividualPage = () => {
                 height: `${20 + Math.random() * 40}px`,
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
-                background: `linear-gradient(135deg, rgba(0, 105, 92, 0.1), rgba(38, 166, 154, 0.05))`,
+                background: `linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(245, 158, 11, 0.05))`,
                 borderRadius: i % 3 === 0 ? '50%' : i % 3 === 1 ? '20%' : '0%',
-                border: '1px solid rgba(38, 166, 154, 0.15)',
+                border: '1px solid rgba(245, 158, 11, 0.15)',
                 animationDelay: `${Math.random() * 5}s`,
                 animationDuration: `${15 + Math.random() * 15}s`,
               }}
@@ -85,17 +85,14 @@ const IndividualPage = () => {
 
       {/* Content that scrolls over the fixed background */}
       <div className="relative z-10">
-        {/* Enhanced Banner Section */}
+        {/* Red and Gold Banner Section */}
         <section className="w-full h-[350px] md:h-[450px] relative flex items-center overflow-hidden group">
-          {/* Enhanced overlay with gradient */}
-          <div className="absolute inset-0 bg-gradient-to-b animate-gradient-slow"></div>
-          
           {/* Animated floating dots */}
           <div className="absolute inset-0 overflow-hidden">
             {[...Array(15)].map((_, i) => (
               <div
                 key={`dot-${i}`}
-                className="absolute w-2 h-2 bg-teal-400/30 rounded-full animate-bubble-float"
+                className="absolute w-2 h-2 bg-yellow-400/30 rounded-full animate-bubble-float"
                 style={{
                   left: `${Math.random() * 100}%`,
                   top: `${Math.random() * 100}%`,
@@ -107,34 +104,34 @@ const IndividualPage = () => {
           </div>
           
           <div className="max-w-7xl mx-auto px-6 relative z-10 text-center w-full">
-            {/* Enhanced Premium badge */}
-            <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-teal-600/20 to-emerald-600/20 backdrop-blur-lg border border-teal-300/20 animate-float-glow shadow-[0_0_30px_rgba(0,105,92,0.3)]">
+            {/* Red and Gold Premium badge */}
+            <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-red-600/20 to-yellow-600/20 backdrop-blur-lg border border-yellow-300/20 animate-float-glow shadow-[0_0_30px_rgba(220, 38, 38, 0.3)]">
               <Star className="w-4 h-4 text-yellow-300 animate-spin-slow" fill="currentColor" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-emerald-300 text-sm font-medium">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-red-300 text-sm font-medium">
                 Premium Properties
               </span>
             </div>
             
-            {/* Enhanced Main Title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-slide-up drop-shadow-[0_0_30px_rgba(0,105,92,0.5)]">
-              Find Your Perfect <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-emerald-300 to-amber-300 animate-gradient-text">Individual Property</span>
+            {/* Main Title in Red and Gold */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-slide-up drop-shadow-[0_0_30px_rgba(185, 28, 28, 0.5)]">
+              Find Your Perfect <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-yellow-400 to-red-300 animate-gradient-text">Individual Property</span>
             </h1>
             
-            {/* Enhanced Subtitle */}
-            <p className="text-lg md:text-xl lg:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed ">
+            {/* Subtitle */}
+            <p className="text-lg md:text-xl lg:text-2xl text-yellow-100 mb-8 max-w-3xl mx-auto leading-relaxed">
               Browse through our verified individual properties with premium amenities
             </p>
 
-            {/* Enhanced Property Category Buttons */}
+            {/* Red and Gold Property Category Buttons */}
             <div className="flex flex-wrap justify-center gap-4 px-4 animate-fade-in-up delay-200">
               {propertyCategories.map((category, index) => (
                 <button
                   key={category.name}
                   onClick={() => handleNavigation(category.path)}
-                  className="group relative px-7 py-3.5 rounded-xl text-white font-semibold text-base shadow-2xl hover:shadow-[0_0_40px_rgba(0,105,92,0.5)] transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden animate-slide-up"
+                  className="group relative px-7 py-3.5 rounded-xl text-red-900 font-semibold text-base shadow-2xl hover:shadow-[0_0_40px_rgba(245, 158, 11, 0.5)] transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden animate-slide-up"
                   style={{
                     animationDelay: `${index * 100}ms`,
-                    background: "linear-gradient(135deg, #00695C, #26A69A, #4DB6AC)",
+                    background: "linear-gradient(135deg, #F59E0B, #D97706, #B45309)",
                     backgroundSize: "200% 200%"
                   }}
                 >
@@ -145,7 +142,7 @@ const IndividualPage = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                   
                   {/* Glow effect */}
-                  <div className="absolute -inset-1 bg-gradient-to-r from-teal-600 to-emerald-600 rounded-xl blur opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+                  <div className="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-red-500 rounded-xl blur opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
                   
                   <div className="relative z-10 flex items-center gap-3">
                     <span className="group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">{category.icon}</span>
@@ -157,20 +154,20 @@ const IndividualPage = () => {
           </div>
         </section>
 
-        {/* Enhanced Main Filter Bar Section */}
-        <div className="bg-gradient-to-r from-teal-50/95 via-emerald-50/95 to-teal-50/95 backdrop-blur-xl shadow-2xl sticky top-0 z-40 border-b border-teal-200/30 transition-all duration-500 animate-slide-down">
+        {/* Red and Gold Main Filter Bar Section */}
+        <div className="bg-gradient-to-r from-red-50/95 via-yellow-50/95 to-red-50/95 backdrop-blur-xl shadow-2xl sticky top-0 z-40 border-b border-yellow-200/30 transition-all duration-500 animate-slide-down">
           <div className="max-w-7xl mx-auto px-6 py-4">
-            {/* Enhanced Desktop Layout */}
+            {/* Desktop Layout */}
             <div className="hidden md:block space-y-4">
               {/* First Row - Rent/Buy/Lease and Search */}
               <div className="flex gap-4 items-center">
-                {/* Enhanced Buy/Rent/Lease Toggle Dropdown */}
+                {/* Red and Gold Buy/Rent/Lease Toggle Dropdown */}
                 <div className="relative">
                   <button
                     onClick={() => setOpenDropdown(openDropdown === "toggle" ? null : "toggle")}
-                    className="group relative px-6 py-3.5 rounded-xl text-white font-semibold text-base flex items-center gap-3 shadow-xl hover:shadow-[0_0_30px_rgba(0,105,92,0.4)] transition-all duration-500 transform hover:scale-105 overflow-hidden"
+                    className="group relative px-6 py-3.5 rounded-xl text-red-900 font-semibold text-base flex items-center gap-3 shadow-xl hover:shadow-[0_0_30px_rgba(245, 158, 11, 0.4)] transition-all duration-500 transform hover:scale-105 overflow-hidden"
                     style={{
-                      background: "linear-gradient(135deg, #00695C, #26A69A)",
+                      background: "linear-gradient(135deg, #F59E0B, #D97706)",
                       backgroundSize: "200% 200%"
                     }}
                   >
@@ -182,25 +179,25 @@ const IndividualPage = () => {
                     <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${openDropdown === "toggle" ? 'rotate-180' : ''} relative z-10`} />
                     
                     {/* Glow effect */}
-                    <div className="absolute -inset-1 bg-gradient-to-r from-teal-600 to-emerald-600 rounded-xl blur opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+                    <div className="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-red-500 rounded-xl blur opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
                   </button>
 
                   {openDropdown === "toggle" && (
-                    <div className="absolute top-full left-0 mt-2 bg-teal-50/95 backdrop-blur-xl rounded-2xl shadow-2xl overflow-hidden z-50 min-w-[180px] border border-teal-200/30 animate-slide-down-fast">
+                    <div className="absolute top-full left-0 mt-2 bg-red-50/95 backdrop-blur-xl rounded-2xl shadow-2xl overflow-hidden z-50 min-w-[180px] border border-yellow-200/30 animate-slide-down-fast">
                       <button
                         onClick={() => {
                           handleNavigation("/buy");
                           setActiveButton("Buy");
                           setOpenDropdown(null);
                         }}
-                        className="w-full px-5 py-3.5 text-left text-base hover:bg-teal-100/50 transition-all duration-300 text-teal-900 font-medium group"
+                        className="w-full px-5 py-3.5 text-left text-base hover:bg-red-100/50 transition-all duration-300 text-red-900 font-medium group"
                       >
                         <div className="flex items-center gap-3 group-hover:gap-4 transition-all">
-                          <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-blue-500 to-teal-500"></div>
+                          <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-red-500 to-yellow-500"></div>
                           Buy
                         </div>
                       </button>
-                      <div className="h-px bg-gradient-to-r from-transparent via-teal-200/50 to-transparent"></div>
+                      <div className="h-px bg-gradient-to-r from-transparent via-yellow-200/50 to-transparent"></div>
                       <button
                         onClick={() => {
                           handleNavigation("/rent");
@@ -208,38 +205,38 @@ const IndividualPage = () => {
                           setOpenDropdown(null);
                         }}
                         className="w-full px-5 py-3.5 text-left text-base font-semibold transition-all duration-300 group"
-                        style={{ color: "#00695C", backgroundColor: "#e0f2f1" }}
+                        style={{ color: "#B45309", backgroundColor: "#FEF3C7" }}
                       >
                         <div className="flex items-center gap-3 group-hover:gap-4 transition-all">
-                          <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-teal-500 to-emerald-500"></div>
+                          <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-yellow-500 to-red-500"></div>
                           Rent
                         </div>
                       </button>
-                      <div className="h-px bg-gradient-to-r from-transparent via-teal-200/50 to-transparent"></div>
+                      <div className="h-px bg-gradient-to-r from-transparent via-yellow-200/50 to-transparent"></div>
                       <button
                         onClick={() => {
                           handleNavigation("/lease");
                           setActiveButton("Lease");
                           setOpenDropdown(null);
                         }}
-                        className="w-full px-5 py-3.5 text-left text-base hover:bg-teal-100/50 transition-all duration-300 text-teal-900 font-medium group"
+                        className="w-full px-5 py-3.5 text-left text-base hover:bg-red-100/50 transition-all duration-300 text-red-900 font-medium group"
                       >
                         <div className="flex items-center gap-3 group-hover:gap-4 transition-all">
-                          <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-teal-500"></div>
+                          <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-red-600 to-yellow-500"></div>
                           Lease
                         </div>
                       </button>
-                      <div className="h-px bg-gradient-to-r from-transparent via-teal-200/50 to-transparent"></div>
+                      <div className="h-px bg-gradient-to-r from-transparent via-yellow-200/50 to-transparent"></div>
                       <button
                         onClick={() => {
                           handleNavigation("/sell");
                           setActiveButton("Sell");
                           setOpenDropdown(null);
                         }}
-                        className="w-full px-5 py-3.5 text-left text-base hover:bg-teal-100/50 transition-all duration-300 text-teal-900 font-medium group"
+                        className="w-full px-5 py-3.5 text-left text-base hover:bg-red-100/50 transition-all duration-300 text-red-900 font-medium group"
                       >
                         <div className="flex items-center gap-3 group-hover:gap-4 transition-all">
-                          <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-teal-500"></div>
+                          <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-red-600 to-yellow-500"></div>
                           Sell
                         </div>
                       </button>
@@ -247,28 +244,28 @@ const IndividualPage = () => {
                   )}
                 </div>
 
-                {/* Enhanced Search Input */}
+                {/* Red and Gold Search Input */}
                 <div className="relative flex-1 group">
-                  <div className="absolute inset-0 bg-gradient-to-r from-teal-500/10 to-emerald-500/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                  <Search className="absolute left-5 top-1/2 transform -translate-y-1/2 w-5 h-5 text-teal-400 group-hover:text-teal-600 group-hover:scale-110 transition-all duration-300 z-10" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/10 to-red-500/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+                  <Search className="absolute left-5 top-1/2 transform -translate-y-1/2 w-5 h-5 text-yellow-500 group-hover:text-yellow-600 group-hover:scale-110 transition-all duration-300 z-10" />
                   <input
                     type="text"
                     placeholder="Search by city, locality, or landmark"
-                    className="w-full pl-12 pr-5 py-3.5 rounded-2xl border-2 border-teal-200/50 bg-teal-50/90 text-base focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30 shadow-xl text-teal-900 placeholder-teal-400 transition-all duration-500 relative z-10 hover:shadow-2xl"
+                    className="w-full pl-12 pr-5 py-3.5 rounded-2xl border-2 border-yellow-200/50 bg-yellow-50/90 text-base focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/30 shadow-xl text-red-900 placeholder-yellow-500 transition-all duration-500 relative z-10 hover:shadow-2xl"
                   />
-                  <MapPin className="absolute right-5 top-1/2 transform -translate-y-1/2 w-5 h-5 text-teal-300 group-hover:text-emerald-500 group-hover:rotate-12 transition-all duration-300 z-10" />
+                  <MapPin className="absolute right-5 top-1/2 transform -translate-y-1/2 w-5 h-5 text-yellow-400 group-hover:text-red-500 group-hover:rotate-12 transition-all duration-300 z-10" />
                 </div>
               </div>
 
-              {/* Enhanced Second Row - House Type Buttons */}
+              {/* Second Row - House Type Buttons */}
               <div className="flex flex-wrap gap-3">
                 {houseTypes.map((type, index) => (
                   <button
                     key={type}
                     onClick={() => handleNavigation(`/individual/${type.toLowerCase().replace(/\s+/g, '-')}`)}
-                    className="group relative px-6 py-3 rounded-xl text-white font-semibold text-base shadow-xl hover:shadow-[0_0_25px_rgba(0,105,92,0.4)] transition-all duration-500 whitespace-nowrap transform hover:-translate-y-1 hover:scale-105 overflow-hidden"
+                    className="group relative px-6 py-3 rounded-xl text-red-900 font-semibold text-base shadow-xl hover:shadow-[0_0_25px_rgba(245, 158, 11, 0.4)] transition-all duration-500 whitespace-nowrap transform hover:-translate-y-1 hover:scale-105 overflow-hidden"
                     style={{
-                      background: "linear-gradient(135deg, #00695C, #26A69A)",
+                      background: "linear-gradient(135deg, #F59E0B, #D97706)",
                       animationDelay: `${index * 50}ms`
                     }}
                   >
@@ -279,7 +276,7 @@ const IndividualPage = () => {
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                     
                     {/* Glow effect */}
-                    <div className="absolute -inset-1 bg-gradient-to-r from-teal-600 to-emerald-600 rounded-xl blur opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+                    <div className="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-red-500 rounded-xl blur opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
                     
                     <span className="relative z-10 flex items-center gap-3">
                       <Home className="w-4 h-4 group-hover:rotate-12 transition-transform duration-300" />
@@ -289,31 +286,26 @@ const IndividualPage = () => {
                 ))}
               </div>
             </div>
-
-            {/* Enhanced Mobile Layout */}
-            <div className="md:hidden space-y-4">
-              {/* Mobile content with enhanced theme */}
-            </div>
           </div>
         </div>
 
-        {/* Enhanced Main Content Area */}
+        {/* Red and Gold Main Content Area */}
         <div className="max-w-7xl mx-auto px-6 py-8 lg:py-12">
           <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
-            {/* Left Side - Enhanced Main Content */}
+            {/* Left Side - Main Content */}
             <div className="lg:w-2/3">
               <section>
-                <div className="bg-gradient-to-br from-teal-50/90 via-emerald-50/90 to-teal-50/90 backdrop-blur-xl rounded-3xl shadow-2xl p-8 lg:p-12 text-center border border-teal-200/30 hover:shadow-[0_0_60px_rgba(0,105,92,0.3)] transition-all duration-700 group animate-fade-in-up">
+                <div className="bg-gradient-to-br from-red-50/90 via-yellow-50/90 to-red-50/90 backdrop-blur-xl rounded-3xl shadow-2xl p-8 lg:p-12 text-center border border-yellow-200/30 hover:shadow-[0_0_60px_rgba(245, 158, 11, 0.3)] transition-all duration-700 group animate-fade-in-up">
                   {/* Animated background pattern */}
                   <div className="absolute inset-0 opacity-[0.03] rounded-3xl overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-teal-500/20 to-transparent animate-shimmer"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-500/20 to-transparent animate-shimmer"></div>
                   </div>
                   
-                  {/* Enhanced floating icon */}
+                  {/* Floating icon */}
                   <div
-                    className="w-24 h-24 md:w-28 md:h-28 rounded-3xl mx-auto mb-6 flex items-center justify-center shadow-2xl group-hover:shadow-[0_0_50px_rgba(0,105,92,0.5)] transition-all duration-700 transform group-hover:scale-110 group-hover:rotate-3 relative"
+                    className="w-24 h-24 md:w-28 md:h-28 rounded-3xl mx-auto mb-6 flex items-center justify-center shadow-2xl group-hover:shadow-[0_0_50px_rgba(245, 158, 11, 0.5)] transition-all duration-700 transform group-hover:scale-110 group-hover:rotate-3 relative"
                     style={{
-                      background: "linear-gradient(135deg, #00695C, #26A69A, #4DB6AC)",
+                      background: "linear-gradient(135deg, #F59E0B, #D97706, #B45309)",
                       backgroundSize: "200% 200%"
                     }}
                   >
@@ -321,66 +313,66 @@ const IndividualPage = () => {
                     <div className="absolute inset-0 animate-gradient-shift-slow rounded-3xl"></div>
                     
                     {/* Glow effect */}
-                    <div className="absolute -inset-4 bg-gradient-to-r from-teal-600 to-emerald-600 rounded-3xl blur opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
+                    <div className="absolute -inset-4 bg-gradient-to-r from-yellow-500 to-red-500 rounded-3xl blur opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
                     
                     <Home className="w-12 h-12 text-white group-hover:rotate-12 transition-transform duration-700 relative z-10" />
                   </div>
                   
-                  <h2 className="text-3xl md:text-4xl font-bold text-teal-900 mb-4 group-hover:text-teal-950 transition-colors duration-300">
-                    Premium Properties <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-emerald-600 to-teal-700 animate-gradient-text-slow">Coming Soon</span>
+                  <h2 className="text-3xl md:text-4xl font-bold text-red-900 mb-4 group-hover:text-red-950 transition-colors duration-300">
+                    Premium Properties <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-yellow-700 to-red-700 animate-gradient-text-slow">Coming Soon</span>
                   </h2>
                   
-                  <p className="text-teal-800 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed group-hover:text-teal-900 transition-colors duration-300 backdrop-blur-sm bg-teal-100/30 rounded-2xl p-6 border border-teal-200/20">
+                  <p className="text-red-800 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed group-hover:text-red-900 transition-colors duration-300 backdrop-blur-sm bg-red-100/30 rounded-2xl p-6 border border-yellow-200/20">
                     We're currently adding exclusive individual properties to our database. 
-                    <span className="block mt-4 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-600 font-semibold text-xl">
+                    <span className="block mt-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600 font-semibold text-xl">
                       Check back soon for amazing deals!
                     </span>
                   </p>
                   
                   <div className="mt-8 flex justify-center gap-4">
-                    <button className="group relative px-6 py-3 rounded-xl border-2 border-teal-500 text-teal-600 font-semibold hover:bg-gradient-to-r from-teal-50 to-emerald-50 transition-all duration-500 transform hover:scale-105 overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-teal-100 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                    <button className="group relative px-6 py-3 rounded-xl border-2 border-yellow-500 text-yellow-600 font-semibold hover:bg-gradient-to-r from-yellow-50 to-red-50 transition-all duration-500 transform hover:scale-105 overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-100 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                       <span className="relative z-10">Get Notified</span>
                     </button>
                     <button 
-                      className="group relative px-6 py-3 rounded-xl text-white font-semibold shadow-xl hover:shadow-[0_0_30px_rgba(0,105,92,0.5)] transition-all duration-500 transform hover:scale-105 overflow-hidden"
+                      className="group relative px-6 py-3 rounded-xl text-red-900 font-semibold shadow-xl hover:shadow-[0_0_30px_rgba(245, 158, 11, 0.5)] transition-all duration-500 transform hover:scale-105 overflow-hidden"
                       style={{
-                        background: "linear-gradient(135deg, #00695C, #26A69A)",
+                        background: "linear-gradient(135deg, #F59E0B, #D97706)",
                         backgroundSize: "200% 200%"
                       }}
                     >
                       <div className="absolute inset-0 animate-gradient-shift"></div>
-                      <div className="absolute -inset-1 bg-gradient-to-r from-teal-600 to-emerald-600 rounded-xl blur opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+                      <div className="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-red-500 rounded-xl blur opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
                       <span className="relative z-10">Browse Similar</span>
                     </button>
                   </div>
                 </div>
               </section>
 
-              {/* Enhanced Empty State */}
-              <div className="mt-8 bg-gradient-to-br from-teal-50/90 via-emerald-50/90 to-teal-50/90 backdrop-blur-xl rounded-3xl shadow-2xl p-8 lg:p-12 text-center border border-teal-200/30 animate-fade-in-up delay-300">
+              {/* Empty State */}
+              <div className="mt-8 bg-gradient-to-br from-red-50/90 via-yellow-50/90 to-red-50/90 backdrop-blur-xl rounded-3xl shadow-2xl p-8 lg:p-12 text-center border border-yellow-200/30 animate-fade-in-up delay-300">
                 <div className="max-w-2xl mx-auto">
                   {/* Animated icon */}
-                  <div className="w-20 h-20 rounded-3xl bg-gradient-to-r from-teal-500/10 to-emerald-500/10 mx-auto mb-6 flex items-center justify-center relative">
-                    <div className="absolute inset-0 bg-gradient-to-r from-teal-500/20 to-emerald-500/20 rounded-3xl animate-pulse-slow"></div>
-                    <Home className="w-10 h-10 text-teal-600 animate-bounce-slow relative z-10" />
+                  <div className="w-20 h-20 rounded-3xl bg-gradient-to-r from-yellow-500/10 to-red-500/10 mx-auto mb-6 flex items-center justify-center relative">
+                    <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-red-500/20 rounded-3xl animate-pulse-slow"></div>
+                    <Home className="w-10 h-10 text-yellow-600 animate-bounce-slow relative z-10" />
                   </div>
                   
-                  <h3 className="text-2xl font-bold text-teal-900 mb-4">No Properties Found</h3>
+                  <h3 className="text-2xl font-bold text-red-900 mb-4">No Properties Found</h3>
                   
-                  <p className="text-teal-800 mb-6 backdrop-blur-sm bg-teal-100/30 rounded-xl p-4 border border-teal-200/20">
+                  <p className="text-red-800 mb-6 backdrop-blur-sm bg-red-100/30 rounded-xl p-4 border border-yellow-200/20">
                     Use the filters on the right to find properties that match your criteria.
                   </p>
                   
-                  <div className="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-gradient-to-r from-teal-50 to-emerald-50 border border-teal-100">
+                  <div className="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-gradient-to-r from-yellow-50 to-red-50 border border-yellow-100">
                     {[0, 150, 300].map((delay) => (
                       <div
                         key={delay}
-                        className="w-2 h-2 rounded-full bg-gradient-to-r from-teal-500 to-emerald-500 animate-pulse"
+                        className="w-2 h-2 rounded-full bg-gradient-to-r from-yellow-500 to-red-500 animate-pulse"
                         style={{ animationDelay: `${delay}ms` }}
                       ></div>
                     ))}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-600 font-medium">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600 font-medium">
                       Adjust your filters to see matching properties
                     </span>
                   </div>
@@ -388,25 +380,25 @@ const IndividualPage = () => {
               </div>
             </div>
 
-            {/* Right Side - Enhanced Fixed Filter Panel */}
+            {/* Right Side - Fixed Filter Panel */}
             <div className="lg:w-1/3 lg:relative">
               <div className="lg:sticky lg:top-[120px] lg:max-h-[calc(100vh-140px)] lg:overflow-y-auto lg:custom-scrollbar animate-slide-in-right">
-                <div className="bg-gradient-to-b from-teal-50/95 via-emerald-50/95 to-teal-50/95 backdrop-blur-xl rounded-3xl shadow-2xl p-6 border border-teal-200/30 hover:shadow-[0_0_40px_rgba(0,105,92,0.2)] transition-all duration-500">
-                  {/* Enhanced Header */}
-                  <h3 className="text-xl font-bold text-teal-900 mb-6 flex items-center gap-3">
-                    <div className="p-2 rounded-xl bg-gradient-to-r from-teal-500/10 to-emerald-500/10 animate-pulse-slow">
-                      <Filter className="w-5 h-5 animate-rotate-slow" style={{ color: "#00695C" }} />
+                <div className="bg-gradient-to-b from-red-50/95 via-yellow-50/95 to-red-50/95 backdrop-blur-xl rounded-3xl shadow-2xl p-6 border border-yellow-200/30 hover:shadow-[0_0_40px_rgba(245, 158, 11, 0.2)] transition-all duration-500">
+                  {/* Header */}
+                  <h3 className="text-xl font-bold text-red-900 mb-6 flex items-center gap-3">
+                    <div className="p-2 rounded-xl bg-gradient-to-r from-yellow-500/10 to-red-500/10 animate-pulse-slow">
+                      <Filter className="w-5 h-5 animate-rotate-slow" style={{ color: "#B45309" }} />
                     </div>
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-600">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600">
                       Advanced Filters
                     </span>
                   </h3>
 
-                  {/* Enhanced Price Range */}
+                  {/* Price Range */}
                   <div className="mb-6 animate-fade-in-up delay-100">
-                    <label className="text-sm font-semibold text-teal-800 mb-3 block flex items-center gap-2">
+                    <label className="text-sm font-semibold text-red-800 mb-3 block flex items-center gap-2">
                       <span className="text-xl animate-bounce-slow">💰</span> 
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-600">
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600">
                         Price Range
                       </span>
                     </label>
@@ -414,24 +406,24 @@ const IndividualPage = () => {
                       <input
                         type="number"
                         placeholder="Min"
-                        className="w-1/2 px-4 py-3 rounded-xl border-2 border-teal-200/50 bg-teal-50/80 text-sm focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30 shadow-lg text-teal-900 placeholder-teal-400 transition-all duration-300 hover:shadow-xl"
+                        className="w-1/2 px-4 py-3 rounded-xl border-2 border-yellow-200/50 bg-yellow-50/80 text-sm focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/30 shadow-lg text-red-900 placeholder-yellow-500 transition-all duration-300 hover:shadow-xl"
                       />
                       <input
                         type="number"
                         placeholder="Max"
-                        className="w-1/2 px-4 py-3 rounded-xl border-2 border-teal-200/50 bg-teal-50/80 text-sm focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30 shadow-lg text-teal-900 placeholder-teal-400 transition-all duration-300 hover:shadow-xl"
+                        className="w-1/2 px-4 py-3 rounded-xl border-2 border-yellow-200/50 bg-yellow-50/80 text-sm focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/30 shadow-lg text-red-900 placeholder-yellow-500 transition-all duration-300 hover:shadow-xl"
                       />
                     </div>
-                    <div className="mt-3 h-2 bg-gradient-to-r from-teal-100 to-emerald-100 rounded-full overflow-hidden">
-                      <div className="h-full w-3/4 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full animate-progress"></div>
+                    <div className="mt-3 h-2 bg-gradient-to-r from-yellow-100 to-red-100 rounded-full overflow-hidden">
+                      <div className="h-full w-3/4 bg-gradient-to-r from-yellow-500 to-red-500 rounded-full animate-progress"></div>
                     </div>
                   </div>
 
-                  {/* Enhanced BHK Type */}
+                  {/* BHK Type */}
                   <div className="mb-6 animate-fade-in-up delay-200">
-                    <label className="text-sm font-semibold text-teal-800 mb-3 block flex items-center gap-2">
+                    <label className="text-sm font-semibold text-red-800 mb-3 block flex items-center gap-2">
                       <span className="text-xl animate-bounce-slow">🏠</span>
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-600">
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600">
                         BHK Type
                       </span>
                     </label>
@@ -441,16 +433,16 @@ const IndividualPage = () => {
                           key={bhk} 
                           onMouseEnter={() => setHoveredFilter(`bhk-${index}`)}
                           onMouseLeave={() => setHoveredFilter(null)}
-                          className={`flex items-center gap-3 p-3 rounded-xl border-2 border-teal-200/50 hover:border-teal-300 cursor-pointer transition-all duration-300 hover:bg-gradient-to-r from-teal-50/50 to-emerald-50/50 group animate-fade-in-up ${
+                          className={`flex items-center gap-3 p-3 rounded-xl border-2 border-yellow-200/50 hover:border-yellow-300 cursor-pointer transition-all duration-300 hover:bg-gradient-to-r from-yellow-50/50 to-red-50/50 group animate-fade-in-up ${
                             hoveredFilter === `bhk-${index}` ? 'scale-[1.02]' : ''
                           }`}
                           style={{ animationDelay: `${index * 50}ms` }}
                         >
                           <input 
                             type="checkbox" 
-                            className="w-4 h-4 rounded border-teal-300 text-teal-600 focus:ring-teal-500/30 transition-all duration-300" 
+                            className="w-4 h-4 rounded border-yellow-300 text-yellow-600 focus:ring-yellow-500/30 transition-all duration-300" 
                           />
-                          <span className="text-sm text-teal-800 group-hover:text-teal-900 group-hover:font-medium transition-all duration-300">
+                          <span className="text-sm text-red-800 group-hover:text-red-900 group-hover:font-medium transition-all duration-300">
                             {bhk}
                           </span>
                         </label>
@@ -458,11 +450,11 @@ const IndividualPage = () => {
                     </div>
                   </div>
 
-                  {/* Enhanced Property Status */}
+                  {/* Property Status */}
                   <div className="mb-6 animate-fade-in-up delay-300">
-                    <label className="text-sm font-semibold text-teal-800 mb-3 block flex items-center gap-2">
+                    <label className="text-sm font-semibold text-red-800 mb-3 block flex items-center gap-2">
                       <span className="text-xl animate-bounce-slow">📅</span>
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-600">
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600">
                         Property Status
                       </span>
                     </label>
@@ -472,16 +464,16 @@ const IndividualPage = () => {
                           key={status} 
                           onMouseEnter={() => setHoveredFilter(`status-${index}`)}
                           onMouseLeave={() => setHoveredFilter(null)}
-                          className={`flex items-center gap-3 p-3 rounded-xl hover:bg-gradient-to-r from-teal-50/50 to-emerald-50/50 cursor-pointer transition-all duration-300 group animate-fade-in-up ${
+                          className={`flex items-center gap-3 p-3 rounded-xl hover:bg-gradient-to-r from-yellow-50/50 to-red-50/50 cursor-pointer transition-all duration-300 group animate-fade-in-up ${
                             hoveredFilter === `status-${index}` ? 'scale-[1.02]' : ''
                           }`}
                           style={{ animationDelay: `${300 + index * 50}ms` }}
                         >
                           <input 
                             type="checkbox" 
-                            className="w-4 h-4 rounded border-teal-300 text-teal-600 focus:ring-teal-500/30 transition-all duration-300" 
+                            className="w-4 h-4 rounded border-yellow-300 text-yellow-600 focus:ring-yellow-500/30 transition-all duration-300" 
                           />
-                          <span className="text-sm text-teal-800 group-hover:text-teal-900 group-hover:font-medium transition-all duration-300">
+                          <span className="text-sm text-red-800 group-hover:text-red-900 group-hover:font-medium transition-all duration-300">
                             {status}
                           </span>
                         </label>
@@ -489,11 +481,11 @@ const IndividualPage = () => {
                     </div>
                   </div>
 
-                  {/* Enhanced Furnishing */}
+                  {/* Furnishing */}
                   <div className="mb-6 animate-fade-in-up delay-400">
-                    <label className="text-sm font-semibold text-teal-800 mb-3 block flex items-center gap-2">
+                    <label className="text-sm font-semibold text-red-800 mb-3 block flex items-center gap-2">
                       <span className="text-xl animate-bounce-slow">🛋️</span>
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-600">
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600">
                         Furnishing
                       </span>
                     </label>
@@ -503,13 +495,13 @@ const IndividualPage = () => {
                           key={furnish} 
                           onMouseEnter={() => setHoveredFilter(`furnish-${index}`)}
                           onMouseLeave={() => setHoveredFilter(null)}
-                          className={`flex-1 text-center p-3 rounded-xl border-2 border-teal-200/50 hover:border-teal-300 cursor-pointer transition-all duration-300 hover:bg-gradient-to-r from-teal-50/50 to-emerald-50/50 group animate-fade-in-up ${
+                          className={`flex-1 text-center p-3 rounded-xl border-2 border-yellow-200/50 hover:border-yellow-300 cursor-pointer transition-all duration-300 hover:bg-gradient-to-r from-yellow-50/50 to-red-50/50 group animate-fade-in-up ${
                             hoveredFilter === `furnish-${index}` ? 'scale-[1.02]' : ''
                           }`}
                           style={{ animationDelay: `${400 + index * 50}ms` }}
                         >
                           <input type="checkbox" className="hidden" />
-                          <span className="text-sm text-teal-800 group-hover:text-teal-900 font-medium transition-all duration-300">
+                          <span className="text-sm text-red-800 group-hover:text-red-900 font-medium transition-all duration-300">
                             {furnish}
                           </span>
                         </label>
@@ -517,18 +509,18 @@ const IndividualPage = () => {
                     </div>
                   </div>
 
-                  {/* Enhanced Action Buttons */}
-                  <div className="flex gap-3 pt-6 border-t border-teal-200/30 animate-fade-in-up delay-500">
+                  {/* Action Buttons */}
+                  <div className="flex gap-3 pt-6 border-t border-yellow-200/30 animate-fade-in-up delay-500">
                     <button
-                      className="flex-1 px-4 py-3 rounded-xl border-2 border-teal-200/50 text-sm font-medium text-teal-700 hover:bg-gradient-to-r from-teal-50 to-emerald-50 hover:border-teal-300 transition-all duration-500 transform hover:scale-[1.02] relative overflow-hidden group"
+                      className="flex-1 px-4 py-3 rounded-xl border-2 border-yellow-200/50 text-sm font-medium text-yellow-700 hover:bg-gradient-to-r from-yellow-50 to-red-50 hover:border-yellow-300 transition-all duration-500 transform hover:scale-[1.02] relative overflow-hidden group"
                     >
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-teal-100 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-100 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                       <span className="relative z-10">Clear All</span>
                     </button>
                     <button
-                      className="flex-1 px-4 py-3 rounded-xl text-sm font-semibold text-white shadow-xl hover:shadow-[0_0_25px_rgba(0,105,92,0.4)] transition-all duration-500 transform hover:scale-[1.02] group relative overflow-hidden"
+                      className="flex-1 px-4 py-3 rounded-xl text-sm font-semibold text-red-900 shadow-xl hover:shadow-[0_0_25px_rgba(245, 158, 11, 0.4)] transition-all duration-500 transform hover:scale-[1.02] group relative overflow-hidden"
                       style={{
-                        background: "linear-gradient(135deg, #00695C, #26A69A)",
+                        background: "linear-gradient(135deg, #F59E0B, #D97706)",
                         backgroundSize: "200% 200%"
                       }}
                     >
@@ -536,7 +528,7 @@ const IndividualPage = () => {
                       <div className="absolute inset-0 animate-gradient-shift"></div>
                       
                       {/* Glow effect */}
-                      <div className="absolute -inset-1 bg-gradient-to-r from-teal-600 to-emerald-600 rounded-xl blur opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+                      <div className="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-red-500 rounded-xl blur opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
                       
                       <span className="relative z-10 flex items-center justify-center gap-2">
                         Apply Filters
@@ -550,43 +542,43 @@ const IndividualPage = () => {
           </div>
         </div>
 
-        {/* Enhanced Mobile Filter Modal */}
+        {/* Mobile Filter Modal */}
         {showMobileFilters && (
           <div className="lg:hidden fixed inset-0 z-50 animate-fade-in-fast">
             {/* Backdrop with gradient */}
             <div 
-              className="absolute inset-0 bg-gradient-to-br from-teal-900/50 to-emerald-900/50 backdrop-blur-xl transition-all duration-500"
+              className="absolute inset-0 bg-gradient-to-br from-red-900/50 to-yellow-900/50 backdrop-blur-xl transition-all duration-500"
               onClick={() => setShowMobileFilters(false)}
             ></div>
             
-            {/* Enhanced Modal */}
-            <div className="absolute bottom-0 w-full bg-gradient-to-b from-teal-50/95 via-emerald-50/95 to-teal-50/95 backdrop-blur-xl rounded-t-3xl shadow-2xl max-h-[85vh] overflow-y-auto animate-slide-up-modal">
-              <div className="sticky top-0 bg-gradient-to-r from-teal-50/95 to-emerald-50/95 backdrop-blur-xl border-b border-teal-200/30 p-6 flex items-center justify-between">
-                <h3 className="text-xl font-bold text-teal-900 flex items-center gap-3">
-                  <div className="p-2 rounded-xl bg-gradient-to-r from-teal-500/10 to-emerald-500/10">
-                    <Filter className="w-5 h-5 animate-rotate-slow" style={{ color: "#00695C" }} />
+            {/* Modal */}
+            <div className="absolute bottom-0 w-full bg-gradient-to-b from-red-50/95 via-yellow-50/95 to-red-50/95 backdrop-blur-xl rounded-t-3xl shadow-2xl max-h-[85vh] overflow-y-auto animate-slide-up-modal">
+              <div className="sticky top-0 bg-gradient-to-r from-red-50/95 to-yellow-50/95 backdrop-blur-xl border-b border-yellow-200/30 p-6 flex items-center justify-between">
+                <h3 className="text-xl font-bold text-red-900 flex items-center gap-3">
+                  <div className="p-2 rounded-xl bg-gradient-to-r from-yellow-500/10 to-red-500/10">
+                    <Filter className="w-5 h-5 animate-rotate-slow" style={{ color: "#B45309" }} />
                   </div>
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-600">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600">
                     Filters
                   </span>
                 </h3>
                 <button
                   onClick={() => setShowMobileFilters(false)}
-                  className="p-2 rounded-xl hover:bg-gradient-to-r from-teal-50 to-emerald-50 transition-all duration-300"
+                  className="p-2 rounded-xl hover:bg-gradient-to-r from-yellow-50 to-red-50 transition-all duration-300"
                 >
-                  <X className="w-5 h-5 text-teal-500 hover:text-teal-600 transition-colors duration-300" />
+                  <X className="w-5 h-5 text-yellow-500 hover:text-yellow-600 transition-colors duration-300" />
                 </button>
               </div>
 
               <div className="p-6 space-y-6">
-                {/* Mobile filter content remains with enhanced theme */}
+                {/* Mobile filter content */}
               </div>
             </div>
           </div>
         )}
       </div>
 
-      {/* Enhanced Custom Animations */}
+      {/* Custom Animations */}
       <style jsx>{`
         @keyframes gradient-flow {
           0%, 100% { background-position: 0% 50%; }
@@ -646,11 +638,11 @@ const IndividualPage = () => {
         @keyframes float-glow {
           0%, 100% { 
             transform: translateY(0px);
-            box-shadow: 0 0 30px rgba(0,105,92,0.3);
+            box-shadow: 0 0 30px rgba(245, 158, 11, 0.3);
           }
           50% { 
             transform: translateY(-5px);
-            box-shadow: 0 0 40px rgba(0,105,92,0.5);
+            box-shadow: 0 0 40px rgba(245, 158, 11, 0.5);
           }
         }
         .animate-float-glow {
@@ -747,21 +739,21 @@ const IndividualPage = () => {
         .scrollbar-hide::-webkit-scrollbar {
           display: none;
         }
-        /* Enhanced custom scrollbar */
+        /* Custom scrollbar */
         .lg\:custom-scrollbar::-webkit-scrollbar {
           width: 6px;
         }
         .lg\:custom-scrollbar::-webkit-scrollbar-track {
-          background: linear-gradient(to bottom, transparent, rgba(0, 105, 92, 0.1), transparent);
+          background: linear-gradient(to bottom, transparent, rgba(245, 158, 11, 0.1), transparent);
           border-radius: 10px;
         }
         .lg\:custom-scrollbar::-webkit-scrollbar-thumb {
-          background: linear-gradient(to bottom, #00695C, #26A69A);
+          background: linear-gradient(to bottom, #F59E0B, #D97706);
           border-radius: 10px;
         }
         .lg\:custom-scrollbar::-webkit-scrollbar-thumb:hover {
-          background: linear-gradient(to bottom, #004D40, #00796B);
-          box-shadow: 0 0 10px rgba(0, 105, 92, 0.5);
+          background: linear-gradient(to bottom, #B45309, #92400E);
+          box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
         }
       `}</style>
     </div>
